@@ -3,7 +3,7 @@
 
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: CustomArtProv.cpp
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: CustomArtProv.h
-CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: /home/wangh/下载/桌面/rc/VMdefendor.xpm
+CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: /home/wangh/下载/VMProber/rc/VMdefendor.xpm
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: /usr/local/include/wx-3.0/wx/accel.h
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: /usr/local/include/wx-3.0/wx/access.h
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: /usr/local/include/wx-3.0/wx/affinematrix2d.h
@@ -5174,7 +5174,7 @@ CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: WorkerProcess.h
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: definition.h
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: module.h
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: process_list.h
-CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: /home/wangh/下载/桌面/rc/VMdefendor.xpm
+CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: /home/wangh/下载/VMProber/rc/VMdefendor.xpm
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: /usr/local/include/wx-3.0/wx/accel.h
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: /usr/local/include/wx-3.0/wx/access.h
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: /usr/local/include/wx-3.0/wx/affinematrix2d.h
@@ -5818,6 +5818,7 @@ CMakeFiles/VM_server.dir/main.cpp.o: main.cpp
 
 CMakeFiles/VM_server.dir/process_list.cpp.o: Features.h
 CMakeFiles/VM_server.dir/process_list.cpp.o: definition.h
+CMakeFiles/VM_server.dir/process_list.cpp.o: getTxt.h
 CMakeFiles/VM_server.dir/process_list.cpp.o: process_list.cpp
 CMakeFiles/VM_server.dir/process_list.cpp.o: process_list.h
 CMakeFiles/VM_server.dir/process_list.cpp.o: wrap.h

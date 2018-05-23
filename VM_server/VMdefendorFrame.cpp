@@ -85,7 +85,7 @@ struct VM_info{
 extern VM_vmi vmi_os;
 extern vector<VM_info> vec_VM_info;
 extern VM_info current_VM_info;
-int current_process_pid;
+int current_pid;
 
 wxBEGIN_EVENT_TABLE(VMdefendorFrame, wxFrame)
 	// File
@@ -1863,58 +1863,16 @@ void VMdefendorFrame::OnOSMonitorlistRemove(wxCommandEvent& evt)
 {
 	AppendMessage(wxT("当前虚拟机OS内核的监控任务已经删除."));
 }
+
+//第二个扫描
 void VMdefendorFrame::OnOSMonitorStart(wxCommandEvent& evt)
 {
-	//struct VM_vmi vmi1;
-//	temp_(vmi1);
-//	VM_find_process_tree(vmi1,vmi1.process);
 
-//	m_msgslist->Clear();
-	//vector<VM_process*> temp_process = cmp_process(vmi1);
-	//vector<VM_file*> temp_file = cmp_file(vmi1,"/bin/");
-//	if(!temp_process.empty()){
-//		for (int i = 0; i < temp_process.size(); ++i){
-//			hide_process.push_back(temp_process[i]);
-//		}
-//		AppendMessage(wxT("   发现隐藏进程:")+wxString(temp_process[0]->comm, wxConvUTF8)+wxT(" pid:")+wxString::Format(wxT("%i"),temp_process[0]->pid));
-//		//AppendMessage();
-//	}
-//	else{
-//		AppendMessage(wxT("   没有找到隐藏进程"));
-//	}
-//	if(!temp_file.empty()){
-//		for (int i = 0; i < temp_process.size(); ++i){
-//			hide_file.push_back(temp_file[i]);
-//		}
-//		AppendMessage(wxT("   发现隐藏文件:")+wxString(temp_file[0]->name.data(), wxConvUTF8));
-//		cout<<"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<temp_file[0]->name<<"\n";
-//	}else{
-//		AppendMessage(wxT("   没有找到隐藏文件"));
-//	}
-//	VM_module_init(vmi1.module);
-//	VM_find_modules_list(vmi1,vmi1.module);
-//
-//	VM_module  *temp_module=&vmi1.module;
-//	do{
-//		if(temp_module->rootkid!=NULL){
-//			AppendMessage(wxT("   发现Rootkit: ")+wxString(temp_module->name, wxConvUTF8));
-//		}
-//		//else{
-//		//	AppendMessage(wxT("   没有找到Rootkid"));
-//		//}
-//		temp_module = VM_list_entry(temp_module->list.next,struct VM_module,list);
-//	}while(&vmi1.module!=temp_module);
-//
-//
+	vector<VM_process*> vec_VM_process = cmp_process(vmi_os);
 
-
-
-//	wxString name = vmi1.module.name;
-	//m_nb_info->AddPage(CreatePanelModule(m_nb_info, vmi1.module), name, true, page_bmp);
-
-
-
-
+	for (int i = 0; i < 1; ++i) {
+        cout<<vec_VM_process[i]->pid<<" "<<vec_VM_process[i]->comm<<"\n";
+	}
 	// Give this pane an icon, too, just for testing.
 	int iconSize = m_mgr.GetArtProvider()->GetMetric(wxAUI_DOCKART_CAPTION_SIZE);
 	// Make it even to use 16 pixel icons with default 17 caption height.
@@ -1946,16 +1904,6 @@ void VMdefendorFrame::OnOSMonitorStart(wxCommandEvent& evt)
 		wxAuiPaneInfo().Name(WIN_MODULE).Caption(wxT("模块列表")).
 		Right().Layer(1).Position(0).MinSize(200,-1).
 		CloseButton(true).MaximizeButton(true));
-
-
-
-	//m_mgr.AddPane(new SettingsPanel(this, this), wxAuiPaneInfo().
-	//	Name(wxT("settings")).Caption(wxT("Dock Manager Settings")).
-	//	Dockable(false).Float().CenterPane().CloseButton(true).Hide());
-
-	//wxBitmap page_bmp = wxArtProvider::GetBitmap(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16,16));
-	//wxWindow *window = CreateProcessTree( this, vmi1.process, m_process_tree );
-
 
 	m_mgr.AddPane(CreateProcessTree( this, *vmi_os.root, m_process_tree ,m_choice_process), wxAuiPaneInfo().
 		Name(WIN_PROCESS).Caption(wxT("进程列表")).
@@ -2053,7 +2001,7 @@ void VMdefendorFrame::OnShowPanelProcess(wxTreeEvent& event)
 		MyTreeItemData *item = (MyTreeItemData*)m_process_tree->GetItemData( itemid );
 		wxBitmap page_bmp = wxArtProvider::GetBitmap(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16, 16));
 		VM_process process = item->GetDesc();
-        current_process_pid = process.pid;
+        current_pid = process.pid;
 		m_nb_info->Freeze();
 		wxString name = process.comm;
 
@@ -2086,6 +2034,7 @@ void VMdefendorFrame::OnShowPanelProcess(wxTreeEvent& event)
 	}
 	m_mgr.Update();
 }
+
 void VMdefendorFrame::OnOSScan(wxCommandEvent& evt)
 {
 	//OnStartWorker(evt);

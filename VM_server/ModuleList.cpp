@@ -56,7 +56,7 @@ void ModuleList(wxTreeCtrl* TreeCtrlone,VM_module& module){
 		VM_module *temp_module = VM_list_entry(post,struct VM_module,list);
 		TreeCtrlone->PrependItem(ItemId,
 								 wxString(temp_module->name, wxConvUTF8),-1,-1,new ModuleTreeItemData(*temp_module));
-		cout<<temp_module->name<<" "<<"\n";
+	//	cout<<temp_module->name<<" "<<"\n";
 		post = post->next;
 	}while(post != module.list.next->pre);
 

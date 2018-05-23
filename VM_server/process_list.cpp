@@ -14,7 +14,10 @@
 #include "definition.h"
 #include "process_list.h"
 #include "wrap.h"
+#include "getTxt.h"
+
 using namespace std;
+
 #define SERV_PORT 9527
 #define MAXLINE 8192
 #define OPEN_MAX 5000
@@ -38,7 +41,6 @@ struct connect{
 
 
 int VM_get_ps_file(int sockfd){
-    cout<<"in VM_get_ps_file\n";
     char file_name[FILE_NAME_MAX_SIZE + 1];
 
     char buffer[BUFFER_SIZE];
@@ -63,7 +65,6 @@ int VM_get_ps_file(int sockfd){
 
             break;
         }
-        cout<<buffer;
         int write_length = fwrite(buffer, sizeof(char), (size_t)strlen(buffer), fp);
         if (write_length < strlen(buffer))
         {
@@ -79,7 +80,6 @@ int VM_get_ps_file(int sockfd){
 }
 
 void VM_get_lsmod_file(int sockfd){
-    cout<<"in VM_get_lsmod_file\n";
     char file_name[FILE_NAME_MAX_SIZE + 1];
 
     char buffer[BUFFER_SIZE];
@@ -122,7 +122,6 @@ void VM_get_lsmod_file(int sockfd){
 }
 
 void VM_get_tree_file(int sockfd){
-    cout<<"in VM_get_tree_file\n";
     char file_name[FILE_NAME_MAX_SIZE + 1];
 
     char buffer[BUFFER_SIZE];
@@ -206,10 +205,10 @@ void VM_find_file_tree(VM_vmi &vmi_os,int cfd){
         if ( temp_file.id == -1 ){
             break;
         }
-        cout<<temp_file.name<<" ";
-        for (int i = 0; i < temp_file.num_children_id; ++i) {
-            cout<<temp_file.children_id[i]<<" ";
-        }cout<<"\n";
+//        cout<<temp_file.name<<" ";
+//        for (int i = 0; i < temp_file.num_children_id; ++i) {
+//            cout<<temp_file.children_id[i]<<" ";
+//        }cout<<"\n";
         vec_VMfile.push_back(temp_file);
         map_pid_file.insert(pair<int,VM_file>(temp_file.id,temp_file));
     }
@@ -263,13 +262,13 @@ void VM_find_file_tree(VM_vmi &vmi_os,int cfd){
 bool ShowTree(VM_process &process,int b){
     VM_list_head *temp = NULL;
     VM_process *temp_process=NULL;
-
-    for (int i = 0; i < b; ++i) {
-        cout<<"---";
-    }cout<<"|";
-    cout<<process.pid<<" "<<process.comm;
-
-    cout<<"\n";
+//
+//    for (int i = 0; i < b; ++i) {
+//        cout<<"---";
+//    }cout<<"|";
+//    cout<<process.pid<<" "<<process.comm;
+//
+//    cout<<"\n";
     if (NULL!=process.children.next)
     {
         for (temp = process.children.next;temp!=&process.children ;temp = temp->next)
@@ -308,18 +307,28 @@ void VM_find_process_asm(VM_process &process)
     int count = process.asm_count = cs_disasm(process.handle, (uint8_t*)asm_code.c_str(), asm_code.size()-1, 0x400829, 0,&process.insn);
     if (count > 0) {
         size_t j;
-       // if (0 == strcmp("a.out",process.comm)){
-            for (j = 0; j < count; j++) {
-
-                printf("0x%"PRIx64":\t%s\t\t%s\n", process.insn[j].address, process.insn[j].mnemonic, process.insn[j].op_str);
-            }
-       // }
-
-      //  cs_free(process.insn, count);
     } else
         printf("ERROR: Failed to disassemble given code!\n");
     //cs_close(&process.handle);
 }
+
+void VM_find_module_asm(VM_module &module)
+{
+    string asm_code;
+    for (unsigned long i = 0; i < 100; i+=1){
+        asm_code+=module.code[i];
+    }
+
+    if (cs_open(CS_ARCH_X86, CS_MODE_64, &module.handle) != CS_ERR_OK)
+        return ;
+    int count = module.asm_count = cs_disasm(module.handle, (uint8_t*)asm_code.c_str(), asm_code.size()-1, 0x400829, 0,&module.insn);
+    if (count > 0) {
+        size_t j;
+    } else
+        printf("ERROR: Failed to disassemble given code!\n");
+    //cs_close(&process.handle);
+}
+
 
 void VM_find_process_tree(VM_vmi &vmi_os,int cfd){
     vector<VM_process> vec_VMPro; //保存接收到的process
@@ -347,7 +356,13 @@ void VM_find_process_tree(VM_vmi &vmi_os,int cfd){
     while(!que_process.empty()){
 
         VM_process* temp_process = que_process.front();
-        cout<<"pid = "<<temp_process->pid<<"name = "<<temp_process->comm<<"\n";
+    //    cout<<"pid = "<<temp_process->pid<<"name = "<<temp_process->comm<<"\n";
+
+        vmi_os.num1_pid[vmi_os.process_number1++] = temp_process->pid;
+
+        vmi_os.pid_to_process.insert(pair<int,VM_process*>((int)temp_process->pid,temp_process));
+        vmi_os.num2_pid[vmi_os.process_number2++]= temp_process->pid;
+
         VM_find_process_asm(*temp_process);
         que_process.pop();
 
@@ -433,8 +448,10 @@ void VM_find_module_list(VM_vmi &vmi_os,int cfd){
         if (0 == strcmp(temp_module.name,"last_module")){
             break;
         }
-        cout<<temp_module.name<<"\n";
+      //  cout<<temp_module.name<<"\n";
+        VM_find_module_asm(temp_module);
         add_module = new VM_module(temp_module);
+
         if (NULL == head_module) {
             head_module = add_module;
             head_module->list.next  = &head_module->list;
@@ -455,12 +472,12 @@ void VM_find_module_list(VM_vmi &vmi_os,int cfd){
 
 void print_module_list(VM_vmi &vmi){
     vector<VM_module> vec_VMModu;
-    cout<<"in print_process_list\n";
+  //  cout<<"in print_process_list\n";
     VM_list_head *post = &vmi.module.list;
     do{
         VM_module *temp_module = VM_list_entry(post,struct VM_module,list);
         vec_VMModu.push_back(*temp_module);
-        cout<<temp_module->name<<" "<<"\n";
+      //  cout<<temp_module->name<<" "<<"\n";
         post = post->next;
     }while(post != vmi.module.list.next->pre);
 
@@ -468,13 +485,13 @@ void print_module_list(VM_vmi &vmi){
 
 void print_process_list(VM_vmi &vmi){
     vector<VM_process> vec_VMPro;
-    cout<<"in print_process_list\n";
+   // cout<<"in print_process_list\n";
     VM_list_head *post = &vmi.process.tasks;
 
     do{
         VM_process *temp_process = VM_list_entry(post,struct VM_process,tasks);
         vec_VMPro.push_back(*temp_process);
-        cout<<temp_process->pid<<" "<<temp_process->comm<<" "<<post<<"\n";
+      //  cout<<temp_process->pid<<" "<<temp_process->comm<<" "<<post<<"\n";
         post = post->next;
     }while(post != vmi.process.tasks.next->pre);
 
@@ -486,11 +503,11 @@ void show_file_tree(VM_file* fileNode,int deep,int sfd)
 
     for(p=fileNode->subdirs.next;p!=&(fileNode->subdirs);p=p->next){
         VM_file* tempNode=VM_list_entry(p,struct VM_file,bro);
-
-        for (int i = 0; i < deep; ++i) {
-            cout<<"---";
-        }cout<<"|";
-        cout<<tempNode->id<<" "<<tempNode->name<<"\n";
+//
+//        for (int i = 0; i < deep; ++i) {
+//            cout<<"---";
+//        }cout<<"|";
+//        cout<<tempNode->id<<" "<<tempNode->name<<"\n";
         if(tempNode->subdirs.next)
         {
             show_file_tree(tempNode,deep+1,sfd);
@@ -502,9 +519,98 @@ void show_file_tree(VM_file* fileNode,int deep,int sfd)
 void VM_get_process_code(VM_vmi &vmi_os,int cfd) {
 
     RecvAll(cfd,(char *)vmi_os.code, sizeof(vmi_os.code));
-    for (int i = 0; i < 1000; ++i) {
-        printf("%lx ",vmi_os.code[i]);
+//    for (int i = 0; i < 1000; ++i) {
+//        printf("%lx ",vmi_os.code[i]);
+//    }
+}
+
+int VM_find_process_hide(VM_vmi &vmi_os)
+{
+
+    sort(vmi_os.num1_pid,vmi_os.num1_pid+vmi_os.process_number1);
+    sort(vmi_os.num2_pid,vmi_os.num2_pid+vmi_os.process_number2);
+    int i,j,flag1=0,flag;
+    for(i=0;i<vmi_os.process_number1;i++){
+        flag = 0;
+        for(j=0;j<vmi_os.process_number2;j++){
+            if(vmi_os.num1_pid[i]==vmi_os.num2_pid[j]){
+                flag = 1;
+                break;
+            }
+        }
+        if(0==flag){
+            flag1 = 1;
+        }
     }
+
+    for(i=0;i<vmi_os.process_number2;i++){
+        flag = 0;
+        for(j=0;j<vmi_os.process_number1;j++){
+                if(vmi_os.num2_pid[i]==vmi_os.num1_pid[j]){
+                flag = 1;
+                break;
+            }
+        }
+        if(0==flag){
+            flag1 = 1;
+        }
+    }
+    if (0==flag1)
+    {
+        //  printf("没有隐藏进程\n");
+    }
+    char vector[200];
+
+    FILE* filePoint = fopen("./ps.txt", "r");
+    if(NULL == filePoint)
+        printf("Not find files!\n");
+    else{
+        int i = 0, count = 1, pid_ps, hide = 0;
+        char* dataHead;
+        fgets(vector, 100, filePoint);    //Gave up the first line
+        while(0 == feof(filePoint)){
+            fgets( vector, 100, filePoint);
+            while(' ' == vector[i])
+                i++;
+            dataHead = vector+i;
+            while(' ' != vector[i])
+                i++;
+            vector[i] = '\0';
+            pid_ps = atoi(dataHead);
+               printf("Compare: %d, %d\n", pid_ps, vmi_os.num1_pid[count]);
+            while(pid_ps > vmi_os.num1_pid[count])
+            {
+                  printf("Find hide process's pid:%d \n", vmi_os.num1_pid[count]);
+                vmi_os.hide_process_pid[vmi_os.hide_process_number++] = vmi_os.num1_pid[count];
+                count++; hide++;
+                if(count >= vmi_os.process_number1)
+                    break;
+            }
+            count++;
+            if(count >= vmi_os.process_number1)
+                break;
+            i = 0;
+        }
+        printf("\n Find %d hide process\n", hide);
+    }
+    printf("\n");
+}
+
+vector<VM_process*> cmp_process(VM_vmi &vmi_os)
+{
+    vector<VM_process* > hid_arry;
+    VM_find_process_hide(vmi_os);
+    for (int i = 0; i < vmi_os.hide_process_number; ++i)
+    {
+        map<int, VM_process*>::iterator iter;
+        iter = vmi_os.pid_to_process.find(vmi_os.hide_process_pid[i]);
+        hid_arry.push_back(iter->second);
+    }
+    if (1==hid_arry.empty())
+    {
+        printf("hahah");
+    }
+    return hid_arry;
 }
 
 void* do_work(void* args){
@@ -577,7 +683,7 @@ void* do_work(void* args){
                     Close(sockfd);
 
                 } else {                            //实际读到了字节数
-                    if (0==strcmp("11",buf)){cout<<"a\n";
+                    if (0==strcmp("11",buf)){//cout<<"a\n";
                         char name[128];
                         int n = Read(sockfd, name, 128);
                         if (n == 0) {                       //读到0,说明客户端关闭链接
@@ -603,25 +709,9 @@ void* do_work(void* args){
                             }
                         }
 
-                    } else if (0==strcmp("12",buf)){cout<<"aa\n";
+                    } else if (0==strcmp("12",buf)){//cout<<"aa\n";
                         char name[128];
                         VM_find_process_tree(vmi_os,sockfd);
-//                        int n = Read(sockfd, name, 128);
-//                        if (n == 0) {                       //读到0,说明客户端关闭链接
-//                            res = epoll_ctl(efd, EPOLL_CTL_DEL, sockfd, NULL);  //将该文件描述符从红黑树摘除
-//                            if (res == -1)
-//                                perr_exit("epoll_ctl error");
-//                            Close(sockfd);                  //关闭与该客户端的链接
-//                            printf("client[%d] closed connection\n", sockfd);
-//
-//                        } else if (n < 0) {                 //出错
-//                            perror("read n < 0 error: ");
-//                            res = epoll_ctl(efd, EPOLL_CTL_DEL, sockfd, NULL);
-//                            Close(sockfd);
-//
-//                        } else {                            //实际读到了字节数
-//                            cout<<"get infomation "<<name;
-//                        }
                     } else if ( 0 == strcmp("13",buf)){
                         VM_find_module_list(vmi_os,sockfd);
                         print_module_list(vmi_os);
@@ -721,20 +811,8 @@ int test_socket(){
     printf("client IP:%s\tport:%d\n",
            inet_ntop(AF_INET, &clie_addr.sin_addr.s_addr, clie_IP, sizeof(clie_IP)),
            ntohs(clie_addr.sin_port));
-return cfd;
+    return cfd;
 
-//    /*读取客户端发送数据*/
-//
-//    char get_buf[128] = "get_module_list";
-//    /*处理完数据回写给客户端*/
-//    write(cfd, get_buf, 128);
-//    VM_vmi vmi;
-//    VM_find_module_list(vmi,cfd);
-//    print_module_list(vmi);
-//
-//    /*关闭链接*/
-//    close(sfd);
-//    close(cfd);
 }
 
 //int main(){

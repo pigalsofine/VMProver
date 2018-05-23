@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/wangh/下载/桌面/VM_server"/>
+				<Option working_dir="/home/wangh/下载/VMProber/VM_server"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/wangh/下载/桌面/VM_server"/>
+				<Option working_dir="/home/wangh/下载/VMProber/VM_server"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/wangh/下载/桌面/VM_server"/>
+				<Option working_dir="/home/wangh/下载/VMProber/VM_server"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="VM_server">
-				<Option output="/home/wangh/下载/桌面/VM_server/VM_server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/wangh/下载/桌面/VM_server"/>
+				<Option output="/home/wangh/下载/VMProber/VM_server/VM_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wangh/下载/VMProber/VM_server"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -58,15 +58,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 VM_server"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 VM_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="VM_server/fast">
-				<Option output="/home/wangh/下载/桌面/VM_server/VM_server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/wangh/下载/桌面/VM_server"/>
+				<Option output="/home/wangh/下载/VMProber/VM_server/VM_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wangh/下载/VMProber/VM_server"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -85,167 +85,167 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 VM_server/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 VM_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/VMProber/VM_server/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/CustomArtProv.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/CustomArtProv.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/CustomArtProv.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/CustomArtProv.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/Features.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/Features.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/Features.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/Features.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/FileTree.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/FileTree.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/FileTree.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/FileTree.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/ModuleList.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/ModuleList.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/ModuleList.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/ModuleList.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelFile.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelFile.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelFile.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelFile.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelModule.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelModule.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelModule.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelModule.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelProcess.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelProcess.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelProcess.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelProcess.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelVM.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelVM.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelVM.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelVM.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelWelcome.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelWelcome.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/PanelWelcome.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/PanelWelcome.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/ProcessTree.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/ProcessTree.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/ProcessTree.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/ProcessTree.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/Profile.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/Profile.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/Profile.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/Profile.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/ProfileMain.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/ProfileMain.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/ProfileMain.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/ProfileMain.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/SettingMain.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/SettingMain.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/SettingMain.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/SettingMain.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/SettingsPanel.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/SettingsPanel.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/SettingsPanel.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/SettingsPanel.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/SizeReportCtrl.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/SizeReportCtrl.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/SizeReportCtrl.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/SizeReportCtrl.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/VMList.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/VMList.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/VMList.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/VMList.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/VMStatusBar.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/VMStatusBar.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/VMStatusBar.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/VMStatusBar.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/VMdefendor.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/VMdefendor.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/VMdefendor.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/VMdefendor.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/VMdefendorFrame.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/VMdefendorFrame.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/VMdefendorFrame.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/VMdefendorFrame.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/WorkerProcess.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/WorkerProcess.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/WorkerProcess.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/WorkerProcess.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/cmp_file.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/cmp_file.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/cmp_file.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/cmp_file.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/definition.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/definition.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/getTxt.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/getTxt.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/getTxt.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/getTxt.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/main.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/main.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/process_list.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/process_list.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/process_list.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/process_list.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/server.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/server.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/wrap.cpp">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/wrap.cpp">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/wrap.h">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/wrap.h">
 			<Option target="VM_server"/>
 		</Unit>
-		<Unit filename="/home/wangh/下载/桌面/VM_server/CMakeLists.txt">
+		<Unit filename="/home/wangh/下载/VMProber/VM_server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -88,20 +88,18 @@ bool UpdateTree(VM_process &process,int b,wxTreeItemId rootId[],wxTreeCtrl* Tree
 bool ShowTree(VM_process &process,int b,wxTreeItemId rootId[],wxTreeCtrl* TreeCtrl1,wxChoice* m_choice_process){
 	VM_list_head *temp = NULL;
 	VM_process *temp_process=NULL;
-cout<<"ShowTree in\n";
 	m_choice_process->AppendString(wxString(process.comm,
         		wxConvUTF8));
 	if(process.parent_pid==9999)
 		rootId[process.pid] = TreeCtrl1->AddRoot(wxString(process.comm,
         		wxConvUTF8),0,0,new MyTreeItemData(process)); 	
    	else if(process.sibling_pid==9999){
-		cout<<"process.sibling_pid==9999\n";
+	//	cout<<"process.sibling_pid==9999\n";
         rootId[process.pid] = TreeCtrl1->PrependItem(rootId[process.parent_pid],
                                                      wxString(process.comm,wxConvUTF8),0,0,new MyTreeItemData(process));
     }
 
    	else{
-		cout<<"last\n";
 		rootId[process.pid] = TreeCtrl1->InsertItem(rootId[process.parent_pid],
 													rootId[process.sibling_pid],wxString(process.comm,wxConvUTF8),0,0,new MyTreeItemData(process));
 	}

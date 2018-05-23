@@ -43,10 +43,10 @@ RM = /home/wangh/下载/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wangh/下载/桌面/VM_server
+CMAKE_SOURCE_DIR = /home/wangh/下载/VMProber/VM_server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wangh/下载/桌面/VM_server
+CMAKE_BINARY_DIR = /home/wangh/下载/VMProber/VM_server
 
 # Include any dependencies generated for this target.
 include CMakeFiles/VM_server.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/VM_server.dir/flags.make
 
 CMakeFiles/VM_server.dir/main.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VM_server.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/main.cpp.o -c /home/wangh/下载/桌面/VM_server/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VM_server.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/main.cpp.o -c /home/wangh/下载/VMProber/VM_server/main.cpp
 
 CMakeFiles/VM_server.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/main.cpp > CMakeFiles/VM_server.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/main.cpp > CMakeFiles/VM_server.dir/main.cpp.i
 
 CMakeFiles/VM_server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/main.cpp -o CMakeFiles/VM_server.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/main.cpp -o CMakeFiles/VM_server.dir/main.cpp.s
 
 CMakeFiles/VM_server.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/VM_server.dir/main.cpp.o.provides.build: CMakeFiles/VM_server.dir/mai
 
 CMakeFiles/VM_server.dir/server.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/server.cpp.o: server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VM_server.dir/server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/server.cpp.o -c /home/wangh/下载/桌面/VM_server/server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VM_server.dir/server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/server.cpp.o -c /home/wangh/下载/VMProber/VM_server/server.cpp
 
 CMakeFiles/VM_server.dir/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/server.cpp > CMakeFiles/VM_server.dir/server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/server.cpp > CMakeFiles/VM_server.dir/server.cpp.i
 
 CMakeFiles/VM_server.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/server.cpp -o CMakeFiles/VM_server.dir/server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/server.cpp -o CMakeFiles/VM_server.dir/server.cpp.s
 
 CMakeFiles/VM_server.dir/server.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/VM_server.dir/server.cpp.o.provides.build: CMakeFiles/VM_server.dir/s
 
 CMakeFiles/VM_server.dir/Features.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/Features.cpp.o: Features.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VM_server.dir/Features.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/Features.cpp.o -c /home/wangh/下载/桌面/VM_server/Features.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VM_server.dir/Features.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/Features.cpp.o -c /home/wangh/下载/VMProber/VM_server/Features.cpp
 
 CMakeFiles/VM_server.dir/Features.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/Features.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/Features.cpp > CMakeFiles/VM_server.dir/Features.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/Features.cpp > CMakeFiles/VM_server.dir/Features.cpp.i
 
 CMakeFiles/VM_server.dir/Features.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/Features.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/Features.cpp -o CMakeFiles/VM_server.dir/Features.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/Features.cpp -o CMakeFiles/VM_server.dir/Features.cpp.s
 
 CMakeFiles/VM_server.dir/Features.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/VM_server.dir/Features.cpp.o.provides.build: CMakeFiles/VM_server.dir
 
 CMakeFiles/VM_server.dir/cmp_file.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/cmp_file.cpp.o: cmp_file.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VM_server.dir/cmp_file.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/cmp_file.cpp.o -c /home/wangh/下载/桌面/VM_server/cmp_file.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VM_server.dir/cmp_file.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/cmp_file.cpp.o -c /home/wangh/下载/VMProber/VM_server/cmp_file.cpp
 
 CMakeFiles/VM_server.dir/cmp_file.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/cmp_file.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/cmp_file.cpp > CMakeFiles/VM_server.dir/cmp_file.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/cmp_file.cpp > CMakeFiles/VM_server.dir/cmp_file.cpp.i
 
 CMakeFiles/VM_server.dir/cmp_file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/cmp_file.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/cmp_file.cpp -o CMakeFiles/VM_server.dir/cmp_file.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/cmp_file.cpp -o CMakeFiles/VM_server.dir/cmp_file.cpp.s
 
 CMakeFiles/VM_server.dir/cmp_file.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/VM_server.dir/cmp_file.cpp.o.provides.build: CMakeFiles/VM_server.dir
 
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: CustomArtProv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VM_server.dir/CustomArtProv.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/CustomArtProv.cpp.o -c /home/wangh/下载/桌面/VM_server/CustomArtProv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VM_server.dir/CustomArtProv.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/CustomArtProv.cpp.o -c /home/wangh/下载/VMProber/VM_server/CustomArtProv.cpp
 
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/CustomArtProv.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/CustomArtProv.cpp > CMakeFiles/VM_server.dir/CustomArtProv.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/CustomArtProv.cpp > CMakeFiles/VM_server.dir/CustomArtProv.cpp.i
 
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/CustomArtProv.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/CustomArtProv.cpp -o CMakeFiles/VM_server.dir/CustomArtProv.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/CustomArtProv.cpp -o CMakeFiles/VM_server.dir/CustomArtProv.cpp.s
 
 CMakeFiles/VM_server.dir/CustomArtProv.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/VM_server.dir/CustomArtProv.cpp.o.provides.build: CMakeFiles/VM_serve
 
 CMakeFiles/VM_server.dir/FileTree.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/FileTree.cpp.o: FileTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/VM_server.dir/FileTree.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/FileTree.cpp.o -c /home/wangh/下载/桌面/VM_server/FileTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/VM_server.dir/FileTree.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/FileTree.cpp.o -c /home/wangh/下载/VMProber/VM_server/FileTree.cpp
 
 CMakeFiles/VM_server.dir/FileTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/FileTree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/FileTree.cpp > CMakeFiles/VM_server.dir/FileTree.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/FileTree.cpp > CMakeFiles/VM_server.dir/FileTree.cpp.i
 
 CMakeFiles/VM_server.dir/FileTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/FileTree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/FileTree.cpp -o CMakeFiles/VM_server.dir/FileTree.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/FileTree.cpp -o CMakeFiles/VM_server.dir/FileTree.cpp.s
 
 CMakeFiles/VM_server.dir/FileTree.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/VM_server.dir/FileTree.cpp.o.provides.build: CMakeFiles/VM_server.dir
 
 CMakeFiles/VM_server.dir/ModuleList.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/ModuleList.cpp.o: ModuleList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/VM_server.dir/ModuleList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/ModuleList.cpp.o -c /home/wangh/下载/桌面/VM_server/ModuleList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/VM_server.dir/ModuleList.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/ModuleList.cpp.o -c /home/wangh/下载/VMProber/VM_server/ModuleList.cpp
 
 CMakeFiles/VM_server.dir/ModuleList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/ModuleList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/ModuleList.cpp > CMakeFiles/VM_server.dir/ModuleList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/ModuleList.cpp > CMakeFiles/VM_server.dir/ModuleList.cpp.i
 
 CMakeFiles/VM_server.dir/ModuleList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/ModuleList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/ModuleList.cpp -o CMakeFiles/VM_server.dir/ModuleList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/ModuleList.cpp -o CMakeFiles/VM_server.dir/ModuleList.cpp.s
 
 CMakeFiles/VM_server.dir/ModuleList.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/VM_server.dir/ModuleList.cpp.o.provides.build: CMakeFiles/VM_server.d
 
 CMakeFiles/VM_server.dir/PanelFile.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/PanelFile.cpp.o: PanelFile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/VM_server.dir/PanelFile.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelFile.cpp.o -c /home/wangh/下载/桌面/VM_server/PanelFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/VM_server.dir/PanelFile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelFile.cpp.o -c /home/wangh/下载/VMProber/VM_server/PanelFile.cpp
 
 CMakeFiles/VM_server.dir/PanelFile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/PanelFile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/PanelFile.cpp > CMakeFiles/VM_server.dir/PanelFile.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/PanelFile.cpp > CMakeFiles/VM_server.dir/PanelFile.cpp.i
 
 CMakeFiles/VM_server.dir/PanelFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/PanelFile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/PanelFile.cpp -o CMakeFiles/VM_server.dir/PanelFile.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/PanelFile.cpp -o CMakeFiles/VM_server.dir/PanelFile.cpp.s
 
 CMakeFiles/VM_server.dir/PanelFile.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/VM_server.dir/PanelFile.cpp.o.provides.build: CMakeFiles/VM_server.di
 
 CMakeFiles/VM_server.dir/PanelModule.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/PanelModule.cpp.o: PanelModule.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/VM_server.dir/PanelModule.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelModule.cpp.o -c /home/wangh/下载/桌面/VM_server/PanelModule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/VM_server.dir/PanelModule.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelModule.cpp.o -c /home/wangh/下载/VMProber/VM_server/PanelModule.cpp
 
 CMakeFiles/VM_server.dir/PanelModule.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/PanelModule.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/PanelModule.cpp > CMakeFiles/VM_server.dir/PanelModule.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/PanelModule.cpp > CMakeFiles/VM_server.dir/PanelModule.cpp.i
 
 CMakeFiles/VM_server.dir/PanelModule.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/PanelModule.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/PanelModule.cpp -o CMakeFiles/VM_server.dir/PanelModule.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/PanelModule.cpp -o CMakeFiles/VM_server.dir/PanelModule.cpp.s
 
 CMakeFiles/VM_server.dir/PanelModule.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/VM_server.dir/PanelModule.cpp.o.provides.build: CMakeFiles/VM_server.
 
 CMakeFiles/VM_server.dir/PanelProcess.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/PanelProcess.cpp.o: PanelProcess.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/VM_server.dir/PanelProcess.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelProcess.cpp.o -c /home/wangh/下载/桌面/VM_server/PanelProcess.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/VM_server.dir/PanelProcess.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelProcess.cpp.o -c /home/wangh/下载/VMProber/VM_server/PanelProcess.cpp
 
 CMakeFiles/VM_server.dir/PanelProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/PanelProcess.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/PanelProcess.cpp > CMakeFiles/VM_server.dir/PanelProcess.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/PanelProcess.cpp > CMakeFiles/VM_server.dir/PanelProcess.cpp.i
 
 CMakeFiles/VM_server.dir/PanelProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/PanelProcess.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/PanelProcess.cpp -o CMakeFiles/VM_server.dir/PanelProcess.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/PanelProcess.cpp -o CMakeFiles/VM_server.dir/PanelProcess.cpp.s
 
 CMakeFiles/VM_server.dir/PanelProcess.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/VM_server.dir/PanelProcess.cpp.o.provides.build: CMakeFiles/VM_server
 
 CMakeFiles/VM_server.dir/PanelVM.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/PanelVM.cpp.o: PanelVM.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/VM_server.dir/PanelVM.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelVM.cpp.o -c /home/wangh/下载/桌面/VM_server/PanelVM.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/VM_server.dir/PanelVM.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelVM.cpp.o -c /home/wangh/下载/VMProber/VM_server/PanelVM.cpp
 
 CMakeFiles/VM_server.dir/PanelVM.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/PanelVM.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/PanelVM.cpp > CMakeFiles/VM_server.dir/PanelVM.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/PanelVM.cpp > CMakeFiles/VM_server.dir/PanelVM.cpp.i
 
 CMakeFiles/VM_server.dir/PanelVM.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/PanelVM.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/PanelVM.cpp -o CMakeFiles/VM_server.dir/PanelVM.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/PanelVM.cpp -o CMakeFiles/VM_server.dir/PanelVM.cpp.s
 
 CMakeFiles/VM_server.dir/PanelVM.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/VM_server.dir/PanelVM.cpp.o.provides.build: CMakeFiles/VM_server.dir/
 
 CMakeFiles/VM_server.dir/PanelWelcome.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/PanelWelcome.cpp.o: PanelWelcome.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/VM_server.dir/PanelWelcome.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelWelcome.cpp.o -c /home/wangh/下载/桌面/VM_server/PanelWelcome.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/VM_server.dir/PanelWelcome.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/PanelWelcome.cpp.o -c /home/wangh/下载/VMProber/VM_server/PanelWelcome.cpp
 
 CMakeFiles/VM_server.dir/PanelWelcome.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/PanelWelcome.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/PanelWelcome.cpp > CMakeFiles/VM_server.dir/PanelWelcome.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/PanelWelcome.cpp > CMakeFiles/VM_server.dir/PanelWelcome.cpp.i
 
 CMakeFiles/VM_server.dir/PanelWelcome.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/PanelWelcome.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/PanelWelcome.cpp -o CMakeFiles/VM_server.dir/PanelWelcome.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/PanelWelcome.cpp -o CMakeFiles/VM_server.dir/PanelWelcome.cpp.s
 
 CMakeFiles/VM_server.dir/PanelWelcome.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/VM_server.dir/PanelWelcome.cpp.o.provides.build: CMakeFiles/VM_server
 
 CMakeFiles/VM_server.dir/ProcessTree.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/ProcessTree.cpp.o: ProcessTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/VM_server.dir/ProcessTree.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/ProcessTree.cpp.o -c /home/wangh/下载/桌面/VM_server/ProcessTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/VM_server.dir/ProcessTree.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/ProcessTree.cpp.o -c /home/wangh/下载/VMProber/VM_server/ProcessTree.cpp
 
 CMakeFiles/VM_server.dir/ProcessTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/ProcessTree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/ProcessTree.cpp > CMakeFiles/VM_server.dir/ProcessTree.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/ProcessTree.cpp > CMakeFiles/VM_server.dir/ProcessTree.cpp.i
 
 CMakeFiles/VM_server.dir/ProcessTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/ProcessTree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/ProcessTree.cpp -o CMakeFiles/VM_server.dir/ProcessTree.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/ProcessTree.cpp -o CMakeFiles/VM_server.dir/ProcessTree.cpp.s
 
 CMakeFiles/VM_server.dir/ProcessTree.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/VM_server.dir/ProcessTree.cpp.o.provides.build: CMakeFiles/VM_server.
 
 CMakeFiles/VM_server.dir/Profile.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/Profile.cpp.o: Profile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/VM_server.dir/Profile.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/Profile.cpp.o -c /home/wangh/下载/桌面/VM_server/Profile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/VM_server.dir/Profile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/Profile.cpp.o -c /home/wangh/下载/VMProber/VM_server/Profile.cpp
 
 CMakeFiles/VM_server.dir/Profile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/Profile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/Profile.cpp > CMakeFiles/VM_server.dir/Profile.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/Profile.cpp > CMakeFiles/VM_server.dir/Profile.cpp.i
 
 CMakeFiles/VM_server.dir/Profile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/Profile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/Profile.cpp -o CMakeFiles/VM_server.dir/Profile.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/Profile.cpp -o CMakeFiles/VM_server.dir/Profile.cpp.s
 
 CMakeFiles/VM_server.dir/Profile.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/VM_server.dir/Profile.cpp.o.provides.build: CMakeFiles/VM_server.dir/
 
 CMakeFiles/VM_server.dir/ProfileMain.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/ProfileMain.cpp.o: ProfileMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/VM_server.dir/ProfileMain.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/ProfileMain.cpp.o -c /home/wangh/下载/桌面/VM_server/ProfileMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/VM_server.dir/ProfileMain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/ProfileMain.cpp.o -c /home/wangh/下载/VMProber/VM_server/ProfileMain.cpp
 
 CMakeFiles/VM_server.dir/ProfileMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/ProfileMain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/ProfileMain.cpp > CMakeFiles/VM_server.dir/ProfileMain.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/ProfileMain.cpp > CMakeFiles/VM_server.dir/ProfileMain.cpp.i
 
 CMakeFiles/VM_server.dir/ProfileMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/ProfileMain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/ProfileMain.cpp -o CMakeFiles/VM_server.dir/ProfileMain.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/ProfileMain.cpp -o CMakeFiles/VM_server.dir/ProfileMain.cpp.s
 
 CMakeFiles/VM_server.dir/ProfileMain.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/VM_server.dir/ProfileMain.cpp.o.provides.build: CMakeFiles/VM_server.
 
 CMakeFiles/VM_server.dir/SettingMain.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/SettingMain.cpp.o: SettingMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/VM_server.dir/SettingMain.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/SettingMain.cpp.o -c /home/wangh/下载/桌面/VM_server/SettingMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/VM_server.dir/SettingMain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/SettingMain.cpp.o -c /home/wangh/下载/VMProber/VM_server/SettingMain.cpp
 
 CMakeFiles/VM_server.dir/SettingMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/SettingMain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/SettingMain.cpp > CMakeFiles/VM_server.dir/SettingMain.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/SettingMain.cpp > CMakeFiles/VM_server.dir/SettingMain.cpp.i
 
 CMakeFiles/VM_server.dir/SettingMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/SettingMain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/SettingMain.cpp -o CMakeFiles/VM_server.dir/SettingMain.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/SettingMain.cpp -o CMakeFiles/VM_server.dir/SettingMain.cpp.s
 
 CMakeFiles/VM_server.dir/SettingMain.cpp.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/VM_server.dir/SettingMain.cpp.o.provides.build: CMakeFiles/VM_server.
 
 CMakeFiles/VM_server.dir/SettingsPanel.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/SettingsPanel.cpp.o: SettingsPanel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/VM_server.dir/SettingsPanel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/SettingsPanel.cpp.o -c /home/wangh/下载/桌面/VM_server/SettingsPanel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/VM_server.dir/SettingsPanel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/SettingsPanel.cpp.o -c /home/wangh/下载/VMProber/VM_server/SettingsPanel.cpp
 
 CMakeFiles/VM_server.dir/SettingsPanel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/SettingsPanel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/SettingsPanel.cpp > CMakeFiles/VM_server.dir/SettingsPanel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/SettingsPanel.cpp > CMakeFiles/VM_server.dir/SettingsPanel.cpp.i
 
 CMakeFiles/VM_server.dir/SettingsPanel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/SettingsPanel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/SettingsPanel.cpp -o CMakeFiles/VM_server.dir/SettingsPanel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/SettingsPanel.cpp -o CMakeFiles/VM_server.dir/SettingsPanel.cpp.s
 
 CMakeFiles/VM_server.dir/SettingsPanel.cpp.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/VM_server.dir/SettingsPanel.cpp.o.provides.build: CMakeFiles/VM_serve
 
 CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.o: SizeReportCtrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.o -c /home/wangh/下载/桌面/VM_server/SizeReportCtrl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.o -c /home/wangh/下载/VMProber/VM_server/SizeReportCtrl.cpp
 
 CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/SizeReportCtrl.cpp > CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/SizeReportCtrl.cpp > CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.i
 
 CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/SizeReportCtrl.cpp -o CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/SizeReportCtrl.cpp -o CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.s
 
 CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/VM_server.dir/SizeReportCtrl.cpp.o.provides.build: CMakeFiles/VM_serv
 
 CMakeFiles/VM_server.dir/VMdefendor.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/VMdefendor.cpp.o: VMdefendor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/VM_server.dir/VMdefendor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/VMdefendor.cpp.o -c /home/wangh/下载/桌面/VM_server/VMdefendor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/VM_server.dir/VMdefendor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/VMdefendor.cpp.o -c /home/wangh/下载/VMProber/VM_server/VMdefendor.cpp
 
 CMakeFiles/VM_server.dir/VMdefendor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/VMdefendor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/VMdefendor.cpp > CMakeFiles/VM_server.dir/VMdefendor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/VMdefendor.cpp > CMakeFiles/VM_server.dir/VMdefendor.cpp.i
 
 CMakeFiles/VM_server.dir/VMdefendor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/VMdefendor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/VMdefendor.cpp -o CMakeFiles/VM_server.dir/VMdefendor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/VMdefendor.cpp -o CMakeFiles/VM_server.dir/VMdefendor.cpp.s
 
 CMakeFiles/VM_server.dir/VMdefendor.cpp.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/VM_server.dir/VMdefendor.cpp.o.provides.build: CMakeFiles/VM_server.d
 
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o: VMdefendorFrame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o -c /home/wangh/下载/桌面/VM_server/VMdefendorFrame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o -c /home/wangh/下载/VMProber/VM_server/VMdefendorFrame.cpp
 
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/VMdefendorFrame.cpp > CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/VMdefendorFrame.cpp > CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.i
 
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/VMdefendorFrame.cpp -o CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/VMdefendorFrame.cpp -o CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.s
 
 CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/VM_server.dir/VMdefendorFrame.cpp.o.provides.build: CMakeFiles/VM_ser
 
 CMakeFiles/VM_server.dir/VMList.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/VMList.cpp.o: VMList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/VM_server.dir/VMList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/VMList.cpp.o -c /home/wangh/下载/桌面/VM_server/VMList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/VM_server.dir/VMList.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/VMList.cpp.o -c /home/wangh/下载/VMProber/VM_server/VMList.cpp
 
 CMakeFiles/VM_server.dir/VMList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/VMList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/VMList.cpp > CMakeFiles/VM_server.dir/VMList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/VMList.cpp > CMakeFiles/VM_server.dir/VMList.cpp.i
 
 CMakeFiles/VM_server.dir/VMList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/VMList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/VMList.cpp -o CMakeFiles/VM_server.dir/VMList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/VMList.cpp -o CMakeFiles/VM_server.dir/VMList.cpp.s
 
 CMakeFiles/VM_server.dir/VMList.cpp.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/VM_server.dir/VMList.cpp.o.provides.build: CMakeFiles/VM_server.dir/V
 
 CMakeFiles/VM_server.dir/VMStatusBar.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/VMStatusBar.cpp.o: VMStatusBar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/VM_server.dir/VMStatusBar.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/VMStatusBar.cpp.o -c /home/wangh/下载/桌面/VM_server/VMStatusBar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/VM_server.dir/VMStatusBar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/VMStatusBar.cpp.o -c /home/wangh/下载/VMProber/VM_server/VMStatusBar.cpp
 
 CMakeFiles/VM_server.dir/VMStatusBar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/VMStatusBar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/VMStatusBar.cpp > CMakeFiles/VM_server.dir/VMStatusBar.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/VMStatusBar.cpp > CMakeFiles/VM_server.dir/VMStatusBar.cpp.i
 
 CMakeFiles/VM_server.dir/VMStatusBar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/VMStatusBar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/VMStatusBar.cpp -o CMakeFiles/VM_server.dir/VMStatusBar.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/VMStatusBar.cpp -o CMakeFiles/VM_server.dir/VMStatusBar.cpp.s
 
 CMakeFiles/VM_server.dir/VMStatusBar.cpp.o.requires:
 
@@ -587,16 +587,16 @@ CMakeFiles/VM_server.dir/VMStatusBar.cpp.o.provides.build: CMakeFiles/VM_server.
 
 CMakeFiles/VM_server.dir/WorkerProcess.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/WorkerProcess.cpp.o: WorkerProcess.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/VM_server.dir/WorkerProcess.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/WorkerProcess.cpp.o -c /home/wangh/下载/桌面/VM_server/WorkerProcess.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/VM_server.dir/WorkerProcess.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/WorkerProcess.cpp.o -c /home/wangh/下载/VMProber/VM_server/WorkerProcess.cpp
 
 CMakeFiles/VM_server.dir/WorkerProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/WorkerProcess.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/WorkerProcess.cpp > CMakeFiles/VM_server.dir/WorkerProcess.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/WorkerProcess.cpp > CMakeFiles/VM_server.dir/WorkerProcess.cpp.i
 
 CMakeFiles/VM_server.dir/WorkerProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/WorkerProcess.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/WorkerProcess.cpp -o CMakeFiles/VM_server.dir/WorkerProcess.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/WorkerProcess.cpp -o CMakeFiles/VM_server.dir/WorkerProcess.cpp.s
 
 CMakeFiles/VM_server.dir/WorkerProcess.cpp.o.requires:
 
@@ -611,16 +611,16 @@ CMakeFiles/VM_server.dir/WorkerProcess.cpp.o.provides.build: CMakeFiles/VM_serve
 
 CMakeFiles/VM_server.dir/getTxt.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/getTxt.cpp.o: getTxt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/VM_server.dir/getTxt.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/getTxt.cpp.o -c /home/wangh/下载/桌面/VM_server/getTxt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/VM_server.dir/getTxt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/getTxt.cpp.o -c /home/wangh/下载/VMProber/VM_server/getTxt.cpp
 
 CMakeFiles/VM_server.dir/getTxt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/getTxt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/getTxt.cpp > CMakeFiles/VM_server.dir/getTxt.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/getTxt.cpp > CMakeFiles/VM_server.dir/getTxt.cpp.i
 
 CMakeFiles/VM_server.dir/getTxt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/getTxt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/getTxt.cpp -o CMakeFiles/VM_server.dir/getTxt.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/getTxt.cpp -o CMakeFiles/VM_server.dir/getTxt.cpp.s
 
 CMakeFiles/VM_server.dir/getTxt.cpp.o.requires:
 
@@ -635,16 +635,16 @@ CMakeFiles/VM_server.dir/getTxt.cpp.o.provides.build: CMakeFiles/VM_server.dir/g
 
 CMakeFiles/VM_server.dir/process_list.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/process_list.cpp.o: process_list.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/VM_server.dir/process_list.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/process_list.cpp.o -c /home/wangh/下载/桌面/VM_server/process_list.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/VM_server.dir/process_list.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/process_list.cpp.o -c /home/wangh/下载/VMProber/VM_server/process_list.cpp
 
 CMakeFiles/VM_server.dir/process_list.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/process_list.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/process_list.cpp > CMakeFiles/VM_server.dir/process_list.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/process_list.cpp > CMakeFiles/VM_server.dir/process_list.cpp.i
 
 CMakeFiles/VM_server.dir/process_list.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/process_list.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/process_list.cpp -o CMakeFiles/VM_server.dir/process_list.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/process_list.cpp -o CMakeFiles/VM_server.dir/process_list.cpp.s
 
 CMakeFiles/VM_server.dir/process_list.cpp.o.requires:
 
@@ -659,16 +659,16 @@ CMakeFiles/VM_server.dir/process_list.cpp.o.provides.build: CMakeFiles/VM_server
 
 CMakeFiles/VM_server.dir/wrap.cpp.o: CMakeFiles/VM_server.dir/flags.make
 CMakeFiles/VM_server.dir/wrap.cpp.o: wrap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/VM_server.dir/wrap.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/wrap.cpp.o -c /home/wangh/下载/桌面/VM_server/wrap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/VM_server.dir/wrap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VM_server.dir/wrap.cpp.o -c /home/wangh/下载/VMProber/VM_server/wrap.cpp
 
 CMakeFiles/VM_server.dir/wrap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VM_server.dir/wrap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/桌面/VM_server/wrap.cpp > CMakeFiles/VM_server.dir/wrap.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangh/下载/VMProber/VM_server/wrap.cpp > CMakeFiles/VM_server.dir/wrap.cpp.i
 
 CMakeFiles/VM_server.dir/wrap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VM_server.dir/wrap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/桌面/VM_server/wrap.cpp -o CMakeFiles/VM_server.dir/wrap.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangh/下载/VMProber/VM_server/wrap.cpp -o CMakeFiles/VM_server.dir/wrap.cpp.s
 
 CMakeFiles/VM_server.dir/wrap.cpp.o.requires:
 
@@ -750,7 +750,7 @@ VM_server: /usr/local/lib/libwx_gtk3u_core-3.0.a
 VM_server: /usr/local/lib/libwx_baseu_xml-3.0.a
 VM_server: /usr/local/lib/libwx_baseu-3.0.a
 VM_server: CMakeFiles/VM_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wangh/下载/桌面/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable VM_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wangh/下载/VMProber/VM_server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable VM_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VM_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -792,6 +792,6 @@ CMakeFiles/VM_server.dir/clean:
 .PHONY : CMakeFiles/VM_server.dir/clean
 
 CMakeFiles/VM_server.dir/depend:
-	cd /home/wangh/下载/桌面/VM_server && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wangh/下载/桌面/VM_server /home/wangh/下载/桌面/VM_server /home/wangh/下载/桌面/VM_server /home/wangh/下载/桌面/VM_server /home/wangh/下载/桌面/VM_server/CMakeFiles/VM_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wangh/下载/VMProber/VM_server && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wangh/下载/VMProber/VM_server /home/wangh/下载/VMProber/VM_server /home/wangh/下载/VMProber/VM_server /home/wangh/下载/VMProber/VM_server /home/wangh/下载/VMProber/VM_server/CMakeFiles/VM_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/VM_server.dir/depend
 

@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wangh/下载/桌面/VM_client/Features.cpp" "/home/wangh/下载/桌面/VM_client/CMakeFiles/VM_client.dir/Features.cpp.o"
-  "/home/wangh/下载/桌面/VM_client/client.cpp" "/home/wangh/下载/桌面/VM_client/CMakeFiles/VM_client.dir/client.cpp.o"
-  "/home/wangh/下载/桌面/VM_client/cmp_file.cpp" "/home/wangh/下载/桌面/VM_client/CMakeFiles/VM_client.dir/cmp_file.cpp.o"
-  "/home/wangh/下载/桌面/VM_client/getTxt.cpp" "/home/wangh/下载/桌面/VM_client/CMakeFiles/VM_client.dir/getTxt.cpp.o"
-  "/home/wangh/下载/桌面/VM_client/module.cpp" "/home/wangh/下载/桌面/VM_client/CMakeFiles/VM_client.dir/module.cpp.o"
-  "/home/wangh/下载/桌面/VM_client/process_list.cpp" "/home/wangh/下载/桌面/VM_client/CMakeFiles/VM_client.dir/process_list.cpp.o"
-  "/home/wangh/下载/桌面/VM_client/wrap.cpp" "/home/wangh/下载/桌面/VM_client/CMakeFiles/VM_client.dir/wrap.cpp.o"
+  "/home/wangh/下载/VMProber/VM_client/Features.cpp" "/home/wangh/下载/VMProber/VM_client/CMakeFiles/VM_client.dir/Features.cpp.o"
+  "/home/wangh/下载/VMProber/VM_client/client.cpp" "/home/wangh/下载/VMProber/VM_client/CMakeFiles/VM_client.dir/client.cpp.o"
+  "/home/wangh/下载/VMProber/VM_client/cmp_file.cpp" "/home/wangh/下载/VMProber/VM_client/CMakeFiles/VM_client.dir/cmp_file.cpp.o"
+  "/home/wangh/下载/VMProber/VM_client/getTxt.cpp" "/home/wangh/下载/VMProber/VM_client/CMakeFiles/VM_client.dir/getTxt.cpp.o"
+  "/home/wangh/下载/VMProber/VM_client/module.cpp" "/home/wangh/下载/VMProber/VM_client/CMakeFiles/VM_client.dir/module.cpp.o"
+  "/home/wangh/下载/VMProber/VM_client/process_list.cpp" "/home/wangh/下载/VMProber/VM_client/CMakeFiles/VM_client.dir/process_list.cpp.o"
+  "/home/wangh/下载/VMProber/VM_client/wrap.cpp" "/home/wangh/下载/VMProber/VM_client/CMakeFiles/VM_client.dir/wrap.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

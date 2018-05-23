@@ -22,5 +22,11 @@ void VM_find_module_list(VM_vmi &vmi_os,int cfd);
 
 void print_module_list(VM_vmi &vmi);
 
+void VM_find_module_asm(VM_module &module);
+
+vector<VM_process*> cmp_process(VM_vmi &vmi_os);
+
+int VM_find_process_hide(VM_vmi &vmi_os);
+
 int test_socket();
 #endif

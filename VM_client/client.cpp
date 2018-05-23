@@ -156,7 +156,7 @@ int  start_socket(){
 }
 
 void send_ps_file(int sfd,VM_vmi &vmi){
-    pclose(getTxt("ps", ""));
+    //pclose(getTxt("ps", ""));
 
     char buffer[1024];
     string file_name;

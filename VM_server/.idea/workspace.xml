@@ -27,23 +27,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VMdefendorFrame.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VMdefendorFrame.cpp">
+      <file leaf-file-name="CustomArtProv.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CustomArtProv.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="2238" lean-forward="true" selection-start-line="2238" selection-end-line="2238" />
-              <folding>
-                <element signature="e#512#531#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PanelProcess.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PanelProcess.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+            <state relative-caret-position="-1056">
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -51,17 +39,24 @@
       <file leaf-file-name="PanelProcess.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PanelProcess.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6750">
-              <caret line="450" column="31" selection-start-line="450" selection-start-column="31" selection-end-line="450" selection-end-column="31" />
+            <state relative-caret-position="270">
+              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomArtProv.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CustomArtProv.cpp">
+      <file leaf-file-name="cmp_file.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmp_file.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="-27" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PanelProcess.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PanelProcess.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -69,50 +64,29 @@
       <file leaf-file-name="process_list.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/process_list.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+            <state relative-caret-position="105">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VMdefendorFrame.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VMdefendorFrame.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-351">
+              <caret line="2004" column="28" selection-start-line="2004" selection-start-column="28" selection-end-line="2004" selection-end-column="28" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#512#531#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stl_vector.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+      <file leaf-file-name="ModuleList.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ModuleList.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3780">
-              <caret line="252" column="6" selection-start-line="252" selection-start-column="6" selection-end-line="252" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VMdefendorFrame.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VMdefendorFrame.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
-              <caret line="156" column="33" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="definition.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/definition.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#45#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="104" selection-start-line="9" selection-start-column="104" selection-end-line="9" selection-end-column="104" />
+            <state relative-caret-position="-176">
+              <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -121,23 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onstart</find>
-      <find>m_monitor</find>
-      <find>EVT_LISTBOX_DCLICK</find>
-      <find>CHOICE</find>
-      <find>ID_NotebookTabFixedWidth</find>
-      <find>onvm</find>
-      <find>m_process_tree</find>
-      <find>OnWinMsgDclik</find>
-      <find>onvmstart</find>
-      <find>WMdefendor_xpm</find>
-      <find>ID_TOOL_CHOICE_</find>
-      <find>系统消息</find>
-      <find>vmi_os</find>
-      <find>scan</find>
-      <find>虚拟机列表</find>
-      <find>虚拟机名称</find>
-      <find>处</find>
       <find>dclick</find>
       <find>handle</find>
       <find>onvmst</find>
@@ -147,10 +104,27 @@
       <find>start</find>
       <find>OnOSMonitorStart</find>
       <find>dclic</find>
-      <find>OnShowPanelProcess</find>
       <find>num1</find>
       <find>AF_INET</find>
       <find>socket_t</find>
+      <find>ScrolledWindowfive</find>
+      <find>ScrolledWindowtwo</find>
+      <find>TextCtrlfour</find>
+      <find>temps</find>
+      <find>showt</find>
+      <find>ShowTree</find>
+      <find>num2_pid</find>
+      <find>cmp_process</find>
+      <find>cout</find>
+      <find>vmi_os</find>
+      <find>num1_pid</find>
+      <find>sibling_pid</find>
+      <find>mdoule</find>
+      <find>module</find>
+      <find>print</find>
+      <find>ShowTree in</find>
+      <find>printf</find>
+      <find>OnShowPanelProcess</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -161,18 +135,18 @@
         <option value="$PROJECT_DIR$/module.cpp" />
         <option value="/usr/include/wx/platform.h" />
         <option value="$PROJECT_DIR$/server.cpp" />
-        <option value="$PROJECT_DIR$/ProcessTree.cpp" />
-        <option value="$PROJECT_DIR$/process_list.h" />
-        <option value="$PROJECT_DIR$/ModuleList.cpp" />
         <option value="$PROJECT_DIR$/ModuleList.h" />
-        <option value="$PROJECT_DIR$/PanelModule.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/PanelFile.cpp" />
         <option value="$PROJECT_DIR$/FileTree.cpp" />
         <option value="$PROJECT_DIR$/VMdefendorFrame.h" />
-        <option value="$PROJECT_DIR$/PanelProcess.cpp" />
         <option value="$PROJECT_DIR$/definition.h" />
+        <option value="$PROJECT_DIR$/process_list.h" />
+        <option value="$PROJECT_DIR$/PanelModule.cpp" />
+        <option value="$PROJECT_DIR$/ProcessTree.cpp" />
+        <option value="$PROJECT_DIR$/ModuleList.cpp" />
         <option value="$PROJECT_DIR$/process_list.cpp" />
+        <option value="$PROJECT_DIR$/PanelProcess.cpp" />
         <option value="$PROJECT_DIR$/VMdefendorFrame.cpp" />
       </list>
     </option>
@@ -188,10 +162,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="45" />
-    <option name="y" value="89" />
-    <option name="width" value="647" />
-    <option name="height" value="728" />
+    <option name="x" value="242" />
+    <option name="y" value="-4" />
+    <option name="width" value="688" />
+    <option name="height" value="904" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -217,7 +191,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/桌面/VM_server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -285,14 +259,17 @@
       <workItem from="1527000965401" duration="1392000" />
       <workItem from="1527003043602" duration="1020000" />
       <workItem from="1527034253889" duration="5203000" />
+      <workItem from="1527058899225" duration="3734000" />
+      <workItem from="1527074039662" duration="6470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111903000" />
+    <option name="totallyTimeSpent" value="122107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15142198" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -300,11 +277,11 @@
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32917705" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50269026" side_tool="true" weight="0.30298507" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49730977" weight="0.33532935" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49730977" visible="true" weight="0.33532935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5419162" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28143713" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -325,18 +302,13 @@
       <breakpoints>
         <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/VMdefendorFrame.cpp</url>
-          <line>2204</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/VMdefendorFrame.cpp</url>
           <line>1702</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/process_list.cpp</url>
-          <line>59</line>
-          <option name="timeStamp" value="70" />
+          <url>file://$PROJECT_DIR$/VMdefendorFrame.cpp</url>
+          <line>1872</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -349,7 +321,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="71" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -367,30 +339,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VMdefendorFrame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30420">
-          <caret line="2028" selection-start-line="2028" selection-end-line="2050" selection-end-column="5" />
-          <folding>
-            <element signature="e#512#531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/include/wx-3.0/wx/gtk/choice.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3780">
-          <caret line="252" column="6" selection-start-line="252" selection-start-column="6" selection-end-line="252" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/arpa/inet.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
@@ -523,13 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/process_list.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/include/wx-3.0/wx/generic/treectlg.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -541,27 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="81" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModuleList.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProcessTree.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="132" column="61" selection-start-line="132" selection-start-column="52" selection-end-line="132" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PanelModule.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="247" column="4" selection-start-line="247" selection-start-column="4" selection-end-line="247" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -643,27 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3780">
-          <caret line="252" column="6" selection-start-line="252" selection-start-column="6" selection-end-line="252" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CustomArtProv.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PanelProcess.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6750">
-          <caret line="450" column="31" selection-start-line="450" selection-start-column="31" selection-end-line="450" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/x86_64-linux-gnu/bits/socket_type.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -671,37 +570,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PanelProcess.h">
+    <entry file="file://$PROJECT_DIR$/process_list.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        <state relative-caret-position="131">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/process_list.cpp">
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="252" column="6" selection-start-line="252" selection-start-column="6" selection-end-line="252" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessTree.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="98" column="106" selection-start-line="98" selection-start-column="104" selection-end-line="98" selection-end-column="106" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/definition.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="605">
+          <caret line="189" column="41" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="41" />
           <folding>
             <element signature="e#45#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PanelProcess.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmp_file.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PanelModule.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="252" column="16" selection-start-line="252" selection-start-column="10" selection-end-line="252" selection-end-column="16" />
+          <folding>
+            <element signature="e#578#597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkerProcess.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PanelWelcome.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ModuleList.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomArtProv.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1056">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PanelProcess.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/VMdefendorFrame.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="2238" lean-forward="true" selection-start-line="2238" selection-end-line="2238" />
+        <state relative-caret-position="-351">
+          <caret line="2004" column="28" selection-start-line="2004" selection-start-column="28" selection-end-line="2004" selection-end-column="28" />
           <folding>
             <element signature="e#512#531#0" expanded="true" />
           </folding>

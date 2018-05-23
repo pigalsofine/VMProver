@@ -255,8 +255,17 @@ wxWindow* CreatePanelModule(wxWindow *Notebookone, const VM_module &module, wxWi
 //   	}
 //
 
+
+	//代码段显示
+	size_t j;
+	for (j = 0; j < module.asm_count; j++) {
+		wxString temps = getHEX_addr(module.insn[j].address)+"  "+wxString(module.insn[j].mnemonic, wxConvUTF8)+"  "+wxString(module.insn[j].op_str, wxConvUTF8) + "\n";
+		TextCtrlfour->AppendText(temps);
+	}
+
+
 	ModuleMessage(Gridone,module);
-	ModuleCode(TextCtrlone,module);
+	//ModuleCode(TextCtrlone,module);
 	DataCode(TextCtrlone,module);
 	return ScrolledWindowone;
 }

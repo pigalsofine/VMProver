@@ -47,7 +47,8 @@ struct VM_info{
 
 extern VM_info current_VM_info;
 extern VM_vmi vmi_os;
-extern int current_process_pid;
+extern int current_pid;;
+
 panelProcessWindow::panelProcessWindow(wxWindow *Notebookone, VM_process &process, wxWindowID winid /*= wxID_ANY*/)
 {
 	wxGrid* Gridone;
@@ -191,14 +192,14 @@ panelProcessWindow::panelProcessWindow(wxWindow *Notebookone, VM_process &proces
 		Gridone->SetCellBackgroundColour(i,2,*wxLIGHT_GREY); 
 	}
 	
-	
+	//代码段显示
 	size_t j;
-        for (j = 0; j < process.asm_count; j++) {
+    for (j = 0; j < process.asm_count; j++) {
 		wxString temps = getHEX_addr(process.insn[j].address)+"  "+wxString(process.insn[j].mnemonic, wxConvUTF8)+"  "+wxString(process.insn[j].op_str, wxConvUTF8) + "\n";
 		TextCtrlfour->AppendText(temps);
         //    printf("0x%"PRIx64":\t%s\t\t%s\n", process.insn[j].address, process.insn[j].mnemonic,
         //        process.insn[j].op_str);
-        }
+    }
 	
 	
 
@@ -393,62 +394,33 @@ void panelProcessWindow::StackCode(wxTextCtrl* TextCtrlone,VM_process &process){
 
 void panelProcessWindow::OnButton1Click(wxCommandEvent& event)
 {
-
 	char get_buf4[128] = "get_process_code";
 	write(current_VM_info.connfd, get_buf4, 128);
 
-	uint64_t start = 0x405d00;
-	uint64_t end = 0x405d00+500;
-	int pid = current_process_pid;
+	unsigned long num1,num2;
+	stringstream ss1,ss2;
+	ss1<<hex<<(string)(Text1->GetLineText(0));
+	ss1>>hex>>num1;
+	ss2<<hex<<(string)(Text2->GetLineText(0));
+	ss2>>hex>>num2;
+
+
+	uint64_t start = num1;
+	uint64_t end = num2;
+	int pid = current_pid;
 	write(current_VM_info.connfd, &pid, sizeof(int));
 	write(current_VM_info.connfd, &start, sizeof(uint64_t));
 	write(current_VM_info.connfd, &end, sizeof(uint64_t));
 
 	sleep(1);
 
-
-
 	TextCtrlone->Clear();
 
-	unsigned long num1,num2;
-    stringstream ss1,ss2;
-    ss1<<hex<<(string)(Text1->GetLineText(0));
-    ss1>>hex>>num1;
-    ss2<<hex<<(string)(Text2->GetLineText(0));
-    ss2>>hex>>num2;
 
 	unsigned long row = (num2-num1) / 16;
-//	unsigned long record = num1-upprocess.start_code_address;
-//	unsigned long temp;
-//	for (int i = 0;i<=row;i++) {
-//		TextCtrlone->AppendText(wxString(getHEX_addr(upprocess.start_code_address + record).c_str()));
-//		TextCtrlone->AppendText("  ");
-//		temp = record;
-//		for (int j = 0;j<16;j++) {
-//			// if (process.code[record] == 0)
-//			// 	TextCtrlone->AppendText("0");
-//			TextCtrlone->AppendText(wxString(getHEX_data(upprocess.code[record]).c_str()));
-//			TextCtrlone->AppendText(" ");
-//			record++;
-//		}
-//		TextCtrlone->AppendText("  ");
-//		for (int j = 0;j<16;j++) {
-//			if (33>upprocess.code[temp]||upprocess.code[temp]>=127)
-//				TextCtrlone->AppendText(".");
-//			else {
-//				char* t = new char[2];
-//				t[0] = (char)upprocess.code[temp];
-//				t[1] = '\0';
-//				TextCtrlone->AppendText(wxString(t, wxConvUTF8));
-//			}
-//			temp++;
-//		}
-//		TextCtrlone->AppendText("\n");
-//	}
-
 	int record = 0;
 	int temp;
-	for (int i = 0;i<300;i++) {
+	for (int i = 0;i<row+1;i++) {
 		TextCtrlone->AppendText(wxString(getHEX_addr(num1 + record).c_str()));
 		TextCtrlone->AppendText("  ");
 		temp = record;
@@ -473,5 +445,4 @@ void panelProcessWindow::OnButton1Click(wxCommandEvent& event)
 		}
 		TextCtrlone->AppendText("\n");
 	}
-
 }
