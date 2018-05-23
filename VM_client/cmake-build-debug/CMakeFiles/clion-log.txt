@@ -1,0 +1,4 @@
+/home/wangh/Downloads/clion-2017.3.4/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/wangh/Desktop/VMProber/VM_client
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wangh/Desktop/VMProber/VM_client

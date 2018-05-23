@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="VM_client"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/wangh/下载/桌面/VM_client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/wangh/下载/桌面/VM_client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/wangh/下载/桌面/VM_client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VM_client">
+				<Option output="/home/wangh/下载/桌面/VM_client/VM_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wangh/下载/桌面/VM_client"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 VM_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VM_client/fast">
+				<Option output="/home/wangh/下载/桌面/VM_client/VM_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wangh/下载/桌面/VM_client"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 VM_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangh/下载/桌面/VM_client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/Features.cpp">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/Features.h">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/client.cpp">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/cmp_file.cpp">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/cmp_file.h">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/definition.h">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/getTxt.cpp">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/getTxt.h">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/module.cpp">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/module.h">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/process_list.cpp">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/process_list.h">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/wrap.cpp">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/wrap.h">
+			<Option target="VM_client"/>
+		</Unit>
+		<Unit filename="/home/wangh/下载/桌面/VM_client/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

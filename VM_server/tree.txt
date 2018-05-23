@@ -1,0 +1,13 @@
+//home/
+wangh
+Desktop
+Documents
+Downloads
+examples.desktop
+Music
+Pictures
+Public
+Templates
+Videos
+
+9 directories, 1 file

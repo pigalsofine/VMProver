@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/VM_client.dir/client.cpp.o CMakeFiles/VM_client.dir/process_list.cpp.o CMakeFiles/VM_client.dir/Features.cpp.o CMakeFiles/VM_client.dir/getTxt.cpp.o  -o VM_client -lvmi -lcapstone 
