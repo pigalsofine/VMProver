@@ -10,6 +10,10 @@ int start_socket();
 
 void print_process_list(VM_vmi &vmi);
 
+vector<VM_module*> cmp_lsmod(VM_vmi &vmi_os);
+
+vector<VM_file*> cmp_file(VM_vmi& vmi_os,char* path);
+
 void VM_find_process_list(VM_vmi &vmi_os,int cfd);
 
 void VM_find_process_tree(VM_vmi &vmi_os,int cfd);

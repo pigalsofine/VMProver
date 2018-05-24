@@ -39,6 +39,129 @@ struct connect{
     struct epoll_event tep;
 };
 
+vector<VM_module*> cmp_lsmod(VM_vmi &vmi_os)
+{
+
+    vector<string> v;
+    vector<VM_module* > hid_arry;
+
+    FILE* fp;
+    if((fp=fopen("lsmod.txt","r"))==0){
+        cout<<"open lsmod error"<<endl;
+        return  hid_arry;
+    }
+
+    char chr[100];
+
+    while(feof(fp)==0)
+    {
+        fgets(chr,100,fp);
+        char temp[200];
+        for (int i=0; i < 100; i++) {
+            temp[i] = chr[i];
+            if (chr[i] == ' ') {
+                chr[i] = '\0';
+                break;
+            }
+        }
+        v.push_back(chr);
+    }
+
+    VM_list_head* l;
+
+    vector<VM_module> vec_VMModu;
+    //  cout<<"in print_process_list\n";
+    VM_list_head *post = &vmi_os.module.list;
+    do{
+        VM_module *temp_module = VM_list_entry(post,struct VM_module,list);
+        vec_VMModu.push_back(*temp_module);
+
+        //cout << temp_module->name<<"\n";
+        int flag = 0;
+        for(size_t i=0;i<v.size();i++)
+        {
+            if (v[i] == temp_module->name){
+                flag = 1;
+            }
+        }
+
+        if (0 == flag){
+            hid_arry.push_back(temp_module);
+        }
+
+        post = post->next;
+    }while(post != vmi_os.module.list.next->pre);
+
+
+    if(hid_arry.empty())   cout<<"Find 0 hide module\n";
+    else   for(size_t i=0;i<hid_arry.size();i++)   cout<<"find a hidden module :"<<hid_arry[i]->name<<endl;
+
+    return hid_arry;
+}
+
+vector<VM_file*> dfs_cmp_file(VM_file* fileNode,int deep,vector<string>& file_vector)
+{
+    vector<VM_file* > hid_arry;
+
+//    for(int i=0;i<file_vector.size();i++)
+//    {
+//        cout<<file_vector[i]<<endl;
+//    }
+
+    VM_list_head* p;
+    for(p=fileNode->subdirs.next;p!=&(fileNode->subdirs);p=p->next){
+        VM_file* tempNode=VM_list_entry(p,struct VM_file,bro);
+//        for(int i=0;i<deep;i++)  cout<<"  ";
+//        cout<<tempNode->name<<endl;
+
+        if(find(file_vector.begin(),file_vector.end(),tempNode->name)==file_vector.end()){
+            //		cout<<"@@@@@@@@@@@@@@@@@@@@@@ "<<tempNode->name<<" this is hidden file"<<endl;
+            tempNode->ishidden=1;
+            hid_arry.push_back(tempNode);
+            cout<<"***************************8is hidden file "<< tempNode->name<<"\n";
+
+        }else {//cout<<tempNode->name<<"is not hidden file"<<"\n";
+            tempNode->ishidden=0;
+        }
+
+        if(tempNode->subdirs.next)
+        {
+            dfs_cmp_file(tempNode,deep+1,file_vector);
+        }
+    }
+    if (hid_arry.empty())
+        cout<<"Find 0 hide file\n";
+
+    return hid_arry;
+}
+
+
+vector<VM_file*> cmp_file(VM_vmi& vmi_os,char* path)
+{
+    FILE* fp;
+
+    freopen("tree.txt", "r", stdin);
+    int num;
+    string filename,name;
+    vector<string> vm;
+
+    cin>>filename;
+    cin.ignore();
+    cin.clear();
+
+    while(cin>>filename)
+    {
+        vm.push_back(filename);
+    }
+    fclose(stdin);
+
+
+    vm.erase(vm.end()-1);
+    vm.erase(vm.end()-2);
+
+    return dfs_cmp_file(vmi_os.file_root , 0 , vm);
+}
+
 
 int VM_get_ps_file(int sockfd){
     char file_name[FILE_NAME_MAX_SIZE + 1];

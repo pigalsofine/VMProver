@@ -1285,34 +1285,40 @@ void VMdefendorFrame::OnWinMsgDclik(wxCommandEvent &evt)
 			panelProcessWindow *panelprocess = new panelProcessWindow(m_nb_info,*hide_process[0]);
   			m_nb_info->AddPage(panelprocess, wxT("隐藏进程"), true, page_bmp);
 		//}
-		struct VM_vmi vmi1;
-		wxTreeItemId rootId[9999];
+//		struct VM_vmi vmi1;
+//		wxTreeItemId rootId[9999];
 		//temp_(vmi1);
 		//VM_find_process_tree(vmi1,vmi1.process);
-		m_process_tree->DeleteAllItems();
-		UpdateTree(vmi1.process,0,rootId,m_process_tree,*hide_process[0]);
-	}else 	if(m_msgslist->GetSelection()==1){ 
-			wxBitmap page_bmp = wxArtProvider::GetBitmap(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16, 16));
-				m_nb_info->AddPage(CreatePanelFile(m_nb_info, *hide_file[0]), wxT("file"), true, page_bmp);
+
+//		m_process_tree->DeleteAllItems();
+//		UpdateTree(vmi_os.process,0,rootId,m_process_tree,*hide_process[0]);
 	}
-	else if(m_msgslist->GetSelection()==2||m_msgslist->GetSelection()==3){
-		struct VM_vmi vmi1;
-		//temp_(vmi1);
-		//VM_module_init(vmi1.module);
-		//VM_find_modules_list(vmi1,vmi1.module);
-	
-		VM_module  *temp_module=&vmi1.module;
-		do{
-			if(temp_module->rootkid!=NULL){
-				wxBitmap page_bmp = wxArtProvider::GetBitmap(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16, 16));
-				m_nb_info->AddPage(CreatePanelModule(m_nb_info, *temp_module), wxT("Rootkit"), true, page_bmp);
-				//AppendMessage(wxT("   找到Rootkid: ")+wxString(temp_module->name, wxConvUTF8));
-				break;
-			}	
-			
-			temp_module = VM_list_entry(temp_module->list.next,struct VM_module,list);
-		}while(&vmi1.module!=temp_module);
+	else if(m_msgslist->GetSelection()==1){
+		wxBitmap page_bmp = wxArtProvider::GetBitmap(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16, 16));
+		m_nb_info->AddPage(CreatePanelModule(m_nb_info, *hide_module[0]), wxT("隐藏模块"), true, page_bmp);
 	}
+	else if(m_msgslist->GetSelection()==2){
+		wxBitmap page_bmp = wxArtProvider::GetBitmap(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16, 16));
+		m_nb_info->AddPage(CreatePanelFile(m_nb_info, *hide_file[0]), wxT("隐藏文件"), true, page_bmp);
+	}
+//	else if(m_msgslist->GetSelection()==2||m_msgslist->GetSelection()==3){
+//		struct VM_vmi vmi1;
+//		//temp_(vmi1);
+//		//VM_module_init(vmi1.module);
+//		//VM_find_modules_list(vmi1,vmi1.module);
+//
+//		VM_module  *temp_module=&vmi1.module;
+//		do{
+//			if(temp_module->rootkid!=NULL){
+//				wxBitmap page_bmp = wxArtProvider::GetBitmap(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16, 16));
+//				m_nb_info->AddPage(CreatePanelModule(m_nb_info, *temp_module), wxT("Rootkit"), true, page_bmp);
+//				//AppendMessage(wxT("   找到Rootkid: ")+wxString(temp_module->name, wxConvUTF8));
+//				break;
+//			}
+//
+//			temp_module = VM_list_entry(temp_module->list.next,struct VM_module,list);
+//		}while(&vmi1.module!=temp_module);
+//	}
 //	wxMessageBox(_("Virtual Machine Bit-Prober\n虚拟机内核恶意攻击检测系统\n(c) Copyright 2017-2017, OS Group, HFUT"), _("About VMArmour"), wxOK, this);
 
 }
@@ -1867,13 +1873,28 @@ void VMdefendorFrame::OnOSMonitorlistRemove(wxCommandEvent& evt)
 //第二个扫描
 void VMdefendorFrame::OnOSMonitorStart(wxCommandEvent& evt)
 {
+	m_msgslist->Clear();
+	hide_process = cmp_process(vmi_os);
 
-	vector<VM_process*> vec_VM_process = cmp_process(vmi_os);
-
-	for (int i = 0; i < 1; ++i) {
-        cout<<vec_VM_process[i]->pid<<" "<<vec_VM_process[i]->comm<<"\n";
+	for (int i = 0; i < hide_process.size(); ++i) {
+        //cout<<vec_VM_process[i]->pid<<" "<<vec_VM_process[i]->comm<<"\n";
+		AppendMessage( wxT( "  找到一个隐藏的进程： pid：" + wxString::Format(wxT("%i"),hide_process[i]->pid) + "  进程名称：" + wxString(hide_process[i]->comm, wxConvUTF8) ) );
 	}
-	// Give this pane an icon, too, just for testing.
+
+    hide_module = cmp_lsmod(vmi_os);
+
+    for (int i = 0; i < hide_module.size(); ++i) {
+        //cout<<vec_VM_module[i]->name<<"\n";
+		AppendMessage( wxT( "  找到一个隐藏的模块： 模块名称：" + wxString(hide_module[i]->name, wxConvUTF8) ) );
+    }
+
+    hide_file = cmp_file(vmi_os,"/bin/");
+
+	for (int i = 0; i < hide_file.size(); ++i) {
+		AppendMessage( wxT( "  找到一个隐藏的文件： 文件名称：" + wxString(hide_file[i]->name, wxConvUTF8) ) );
+	}
+
+    // Give this pane an icon, too, just for testing.
 	int iconSize = m_mgr.GetArtProvider()->GetMetric(wxAUI_DOCKART_CAPTION_SIZE);
 	// Make it even to use 16 pixel icons with default 17 caption height.
 	iconSize &= ~1;

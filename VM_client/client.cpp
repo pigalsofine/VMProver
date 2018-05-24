@@ -126,7 +126,8 @@ void show_file_tree(VM_file* fileNode,int deep,int sfd)
 }
 
 void send_file_tree(int sfd,VM_vmi &vmi){
-    init_file_tree(vmi,"/home/");//tree
+    init_file_tree(vmi,"/bin/");//tree
+    SendAll(sfd, (char *)&vmi.file_root, sizeof(vmi.file_root));
     show_file_tree(&vmi.file_root,0,sfd);
     //服务器终止接收条件
     VM_file file;
@@ -176,7 +177,7 @@ void send_ps_file(int sfd,VM_vmi &vmi){
             // 发送buffer中的字符串到new_server_socket,实际上就是发送给客户端
             if (send(sfd, buffer, BUFFER_SIZE, 0) < 0)
             {
-                printf("Send File:\t%s Failed!\n", file_name);
+                printf("Send File:\t%s Failed!\n", file_name.data());
                 break;
             }
 
@@ -196,7 +197,7 @@ void send_ps_file(int sfd,VM_vmi &vmi){
 }
 
 void send_lsmod_file(int sfd,VM_vmi &vmi){
-    pclose(getTxt("lsmod",""));
+   // pclose(getTxt("lsmod",""));
 
     char buffer[1024];
     string file_name;
@@ -235,7 +236,7 @@ void send_lsmod_file(int sfd,VM_vmi &vmi){
 }
 
 void send_tree_file(int sfd,VM_vmi &vmi){
-    pclose(getTxt("tree", "/home/"));
+   // pclose(getTxt("tree", "/bin/"));
 
     char buffer[1024];
     string file_name;
@@ -294,7 +295,7 @@ int main(void)
                 Write(sfd, "11", 3);
                 sleep(1);
                 Write(sfd,"ubuntu14.04",128);
-                printf("get_VM_name\n");
+                printf("Connect to server... \nConnected completely.\n");
             } else if ( 0 == strcmp(buffer,"get_process_tree") ){
                 Write(sfd, "12", 3);
                 //sleep(1);

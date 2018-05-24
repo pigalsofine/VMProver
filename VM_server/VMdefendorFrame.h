@@ -388,6 +388,7 @@ private:
 	wxDateTime m_monitor_time;   // 本次监控的启动时间
 	wxTimer m_timer_monitor;     // 启动下次扫描的启动定时器
 	vector<VM_process*> hide_process;
+	vector<VM_module*> hide_module;
 	vector<VM_file*> hide_file;
 
     wxDECLARE_EVENT_TABLE();

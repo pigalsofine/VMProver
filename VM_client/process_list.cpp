@@ -200,7 +200,6 @@ bool get_offset(VM_vmi &vmi_os)
 
 int VM_vmi_init(char *argv,VM_vmi &vmi_os)
 {
-printf("in VM_vmi_init");
     char *name = argv;
 
     get_offset(vmi_os);
@@ -255,7 +254,6 @@ printf("in VM_vmi_init");
     else if (VMI_OS_WINDOWS == vmi_get_ostype(vmi_os.vmi)) {
         vmi_read_addr_ksym(vmi_os.vmi, "PsInitialSystemProcess\n", &vmi_os.current_process);
     }
-printf("out VM_vmi_init");
 }
 
 void get_process_infornmation(VM_vmi &vmi_os,VM_process &process,addr_t current_process,int tree_or_list)
