@@ -31,6 +31,10 @@ sys/socket.h
 -
 arpa/inet.h
 -
+sys/stat.h
+-
+sys/param.h
+-
 wrap.h
 /home/wangh/下载/VMProber/VM_client/wrap.h
 process_list.h

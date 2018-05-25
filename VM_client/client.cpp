@@ -5,6 +5,8 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
+#include <sys/stat.h>
+#include <sys/param.h>
 #include "wrap.h"
 #include "process_list.h"
 #include "definition.h"
@@ -136,10 +138,10 @@ void send_file_tree(int sfd,VM_vmi &vmi){
 }
 
 
-
+struct sockaddr_in serv_addr;
 int  start_socket(){
 	int sfd, len;
-    struct sockaddr_in serv_addr;
+
     char buf[BUFSIZ]; 
 
     /*创建一个socket 指定IPv4 TCP*/
@@ -275,8 +277,27 @@ void send_tree_file(int sfd,VM_vmi &vmi){
 
 }
 
+void init_Daemon(){
+    pid_t pid;
+    int i;
+    pid=fork();        //创建第一子进程
+    if(pid<0) exit(1);//创建失败退出
+    if(pid>0) exit(0);//父进程退出
+    setsid();         //第一子进程成为领头进程，脱离终端
+    pid=fork();   //第一子进程生成第二子进程
+    if(pid<0) exit(1);//创建失败退出
+    if(pid>0) exit(0);//第一子进程退出
+    chdir("/home/equal/test6");//切换目录
+    umask(0);               //改变文件创建掩码
+    for(i=0;i< NOFILE;++i)  //关闭文件流
+        close(i);
+}
+
 int main(void)
 {
+//    init_Daemon();
+
+
 	VM_vmi vmi;
 	VM_vmi_init("ubuntu14.04",vmi);//初始化虚拟机
     int sfd = start_socket();
@@ -287,8 +308,17 @@ int main(void)
         int n = Read(sfd, buffer, 128);
         //printf("a\n");
         if (n == 0){
+
             printf("the other side has been closed.\n");
-            break;
+
+            while (1){
+                int rnt = connect(sfd, (struct sockaddr *)&serv_addr, sizeof(serv_addr));
+                if (rnt > -1)
+                    break;
+            }
+
+
+            //break;
         }
         else if (n > 0){
             if ( 0 == strcmp(buffer,"get_VM_name") ){
