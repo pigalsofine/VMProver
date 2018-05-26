@@ -386,12 +386,12 @@ bool ShowTree(VM_process &process,int b){
     VM_list_head *temp = NULL;
     VM_process *temp_process=NULL;
 //
-//    for (int i = 0; i < b; ++i) {
-//        cout<<"---";
-//    }cout<<"|";
-//    cout<<process.pid<<" "<<process.comm;
-//
-//    cout<<"\n";
+    for (int i = 0; i < b; ++i) {
+        cout<<"---";
+    }cout<<"|";
+    cout<<process.pid<<" "<<process.comm;
+
+    cout<<"\n";
     if (NULL!=process.children.next)
     {
         for (temp = process.children.next;temp!=&process.children ;temp = temp->next)

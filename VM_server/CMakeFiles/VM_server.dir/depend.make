@@ -317,6 +317,7 @@ CMakeFiles/VM_server.dir/CustomArtProv.cpp.o: /usr/local/lib/wx/include/gtk3-uni
 
 CMakeFiles/VM_server.dir/Features.cpp.o: Features.cpp
 CMakeFiles/VM_server.dir/Features.cpp.o: Features.h
+CMakeFiles/VM_server.dir/Features.cpp.o: definition.h
 
 CMakeFiles/VM_server.dir/FileTree.cpp.o: Features.h
 CMakeFiles/VM_server.dir/FileTree.cpp.o: FileTree.cpp

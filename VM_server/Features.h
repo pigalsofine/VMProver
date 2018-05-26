@@ -10,28 +10,40 @@
 
 #ifndef __FEATURES_H__
 #define __FEATURES_H__
+
 #include <iostream>
-//#include "definition.h"
+#include <vector>
+#include <string>
+using namespace std;
+
+#define MAX_DATA_NUM 50000
+#define MAX_LINE_LEN 55000
+#define MAX_FEATURES_LEN 1000
+#define MAX_CODE_LEN 1000
+#define MAX_FEATURES_NUM 5
+
 // 恶意软件代码特征
 typedef struct _MalSoftwareFeature {
 	int offset;         // 偏移量
 	int len;            // 长度
-	unsigned char f[100];// 注意这是字符数组，不是字符串，中间可能含0
+	uint8_t f[MAX_FEATURES_LEN];      //特征代码
 } MalSoftwareFeature ;
 
 // 恶意软件
 typedef struct _MalSoftware {
 	char *name;
-	char *description;    
-	int len;            // 实际特征数
-	MalSoftwareFeature feats[5];//最多5特征
+	char *description;
+	int num;    //实际特征数
+	MalSoftwareFeature feats[MAX_FEATURES_NUM];//特征数组
 } MalSoftware;
 
-// 检查代码序列是否包含恶意软件的特征(可以包含几条代码特征序列)
-// 输入：指定长度(len)的代码序列(pText),以字节序列表示
-// 输出：不匹配为0，否则为特征匹配成功的恶意软件的描述信息（MalSoftware结构指针）
-//       
-MalSoftware *CheckMalsoftware_(unsigned char *pText, int len);
+class VM_process;
+vector<VM_process> cmp_virus_process(VM_process &root,char* virus_filename);
+class VM_module;
+vector<VM_module> cmp_virus_module(VM_module& module,char* virus_filename);
 
+//病毒库的维护函数
+bool insert_virus(MalSoftware& virus,const char * const filename);
+vector<MalSoftware> read_virus(const char * const filename);
 
 #endif

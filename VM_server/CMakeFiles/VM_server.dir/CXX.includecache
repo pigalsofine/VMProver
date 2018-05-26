@@ -59,13 +59,23 @@ wx/aui/aui.h
 /home/wangh/下载/VMProber/VM_server/wx/aui/aui.h
 
 /home/wangh/下载/VMProber/VM_server/Features.cpp
-Features.h
-/home/wangh/下载/VMProber/VM_server/Features.h
-stdio.h
-/home/wangh/下载/VMProber/VM_server/stdio.h
+algorithm
+-
+sstream
+-
+vector
+-
+iostream
+-
+definition.h
+/home/wangh/下载/VMProber/VM_server/definition.h
 
 /home/wangh/下载/VMProber/VM_server/Features.h
 iostream
+-
+vector
+-
+string
 -
 
 /home/wangh/下载/VMProber/VM_server/FileTree.cpp
